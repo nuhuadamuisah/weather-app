@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
+    --my-gradient: linear-gradient(135deg, #f5f3f4, #ade8f4);
+}
+body.dark {
+    --bg-black-900: #343a40;
+    --bg-black-100: #212529;
+    --bg-black-50: #393939;
+    --text-black-900: #ffffff;
+    --text-black-700: #e9e9e9;
+    --my-gradient: linear-gradient(135deg, #212529, #343a40);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+.preloader {
+    position: fixed;
+    background: rgb(255, 255, 255) url('/images/Branding\ for\ Corti_ai.gif') no-repeat center center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure the preloader is on top of other content */
+    
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: 'poppins' sans-serif;
+    background:var(--bg-black-900)
+}
+.card {
+    width: 90%;
+    max-width: 470px;
+    min-width: 300px;
+    background: var(--my-gradient);
+    border-radius: 20px;
+    margin: 100px auto 0;
+    padding: 40px 35px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background: var(--bg-black-100);
+    color: var(--bg-text-900);
+    padding: 10px 15px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    font-size: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.search input {
+    border: 0;
+    outline: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    padding: 10px 12px;
+    font-size: 1rem;
+    font-family: 'poppins' sans-serif;
+    
+}
+.search input::placeholder {
+    color: var(--skin-color);
+}
+.search button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: var(--skin-color);
+}
+.weather-icon {
+    width: 170px
+    margin-top: 30px;
+}
+.weather h1 {
+    font-size: 6rem;
+    font-weight: 500;
+    color: var(--skin-color);
+}
+.weather h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: -10px;
+    color: var(--skin-color);
+}
+.details {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 40px;
+}
+.col {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.col img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 2rem;
+    margin-top : -10px;
+    color: var(--text-black-900);
+    font-weight: 900;
+}
+.condition {
+    color: var(--skin-color);
+    font-weight: 600;
+}
